@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#7b61ff">
+    <meta name="description" content="Sanal M — Cybersecurity student at Offenso Hacker Academy. Portfolio: projects, CTF writeups, tools and contact.">
+    <title>Sanal M — Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Sanal M</a>
+        <div>
+          <div class="tag">Student — Offenso Hacker Academy</div>
+        </div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="#" id="openAdmin">Admin</a>
+        </nav>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/sanal-m-130978371" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.3c-1 0-1.8-.8-1.8-1.7 0-1 .8-1.8 1.8-1.8s1.8.8 1.8 1.8c0 .9-.8 1.7-1.8 1.7zm13.5 10.3h-3v-4.8c0-1.1-.4-1.8-1.3-1.8-.7 0-1.1.5-1.3 1-.1.2-.1.5-.1.8v4.8h-3s.1-7.8 0-9h3v1.3c.4-.6 1-1.3 2.5-1.3 1.8 0 3.1 1.2 3.1 3.8v5.2z"/></svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-left">
+          <h2>Hi, I'm Sanal M — cybersecurity student</h2>
+          <p>Learning penetration testing, web security, and reverse engineering at Offenso Hacker Academy. I work on labs, CTFs, and automation tools to sharpen practical skills.</p>
+          <p>
+            <a class="btn" href="#projects">View project</a>
+            <a class="btn" style="margin-left:10px;opacity:0.9;background:linear-gradient(90deg,var(--accent-2),var(--accent-3));" href="#contact">Contact</a>
+          </p>
+        </div>
+        <div class="hero-right">
+          <div class="hero-card">
+            <div class="avatar">SM</div>
+            <div style="margin-top:12px">
+              <strong>Offenso Hacker Academy</strong>
+              <p style="margin:6px 0 0;color:rgba(233,242,255,0.85);font-size:14px">Cybersecurity training • Labs • CTFs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="sections">
+        <section id="featured" class="card featured">
+          <div class="featured-inner">
+            <div class="feature-content">
+              <h2>Featured Project</h2>
+              <h3>CTF Toolkit & Writeups</h3>
+              <p>Collection of recent CTF writeups and the small automation toolkit I use to accelerate recon and reporting. Click below to view the projects and writeups.</p>
+              <p><a class="btn" href="#projects">See Projects</a> <a class="btn btn-outline" href="#contact">Contact</a></p>
+            </div>
+            <div class="feature-image" aria-hidden="true"></div>
+          </div>
+        </section>
+
+        <!-- Embedded admin panel (hidden by default) -->
+        <section id="adminPanel" class="card" style="display:none">
+          <h2>Admin</h2>
+          <div id="adminContent">
+            <div id="adminLogin">
+              <p>Sign in to view messages</p>
+              <form id="adminLoginForm">
+                <div class="form-group">
+                  <label>Username<br><input name="user" required placeholder="admin"></label>
+                </div>
+                <div class="form-group">
+                  <label>Password<br><input name="pass" type="password" required placeholder="••••••"></label>
+                </div>
+                <button class="btn" type="submit">Sign in</button>
+                <p id="adminStatus" style="display:none;margin-top:8px"></p>
+              </form>
+            </div>
+            <div id="adminMessages" style="display:none">
+              <p><button id="adminLogoutBtn" class="btn btn-outline">Sign out</button></p>
+              <div id="messagesList"></div>
+            </div>
+          </div>
+        </section>
+        <section id="about" class="card">
+          <h2>About</h2>
+          <p>Hello — I'm <strong>Sanal M</strong>, a cybersecurity student at Offenso Hacker Academy. I enjoy hands-on security challenges and building tools to automate repetitive tasks. I'll add detailed projects and writeups soon.</p>
+        </section>
+
+        <section id="skills" class="card">
+          <h2>Skills</h2>
+          <div class="skills">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">C / C++</span>
+            <span class="skill-badge">Bash</span>
+            <span class="skill-badge">Linux</span>
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">Web Security</span>
+          </div>
+        </section>
+
+        <section id="projects" class="card">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <article class="project">
+              <h3>CTF Writeups (placeholder)</h3>
+              <p>Writeups and notes from recent Capture The Flag challenges.</p>
+            </article>
+            <article class="project">
+              <h3>Web Security Lab</h3>
+              <p>Reports and findings from web application security labs.</p>
+            </article>
+            <article class="project">
+              <h3>Automation Scripts</h3>
+              <p>Small tools to automate recon and reporting tasks.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="card">
+          <h2>Contact</h2>
+          <p class="contact-line">Email: <a href="mailto:sanalofficial02@gmail.com">sanalofficial02@gmail.com</a></p>
+          <p class="contact-line">LinkedIn: <a href="https://www.linkedin.com/in/sanal-m-130978371" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="vertical-align:middle;margin-right:6px;opacity:0.95"><path d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.3c-1 0-1.8-.8-1.8-1.7 0-1 .8-1.8 1.8-1.8s1.8.8 1.8 1.8c0 .9-.8 1.7-1.8 1.7zm13.5 10.3h-3v-4.8c0-1.1-.4-1.8-1.3-1.8-.7 0-1.1.5-1.3 1-.1.2-.1.5-.1.8v4.8h-3s.1-7.8 0-9h3v1.3c.4-.6 1-1.3 2.5-1.3 1.8 0 3.1 1.2 3.1 3.8v5.2z"/></svg>linkedin.com/in/sanal-m-130978371</a></p>
+          <p class="contact-line">Resume: <a href="resume.pdf" download style="color:var(--accent-1);font-weight:700">Download resume</a> <em style="color:var(--muted);font-style:normal">(or add `resume.pdf` to the folder)</em></p>
+          
+          <h3 style="margin-top:24px;margin-bottom:12px">Send a Message</h3>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn" style="margin-top:12px">Send Message</button>
+            <p id="formStatus" style="margin-top:10px;color:var(--accent-1);display:none"></p>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Sanal M — Built with simple HTML &amp  ; CSS</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+      // Contact form submission via fetch to local backend
+      (function(){
+        const form = document.getElementById('contactForm');
+        const status = document.getElementById('formStatus');
+        if (!form) return;
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          status.style.display = 'none';
+          const data = {
+            name: form.name.value.trim(),
+            email: form.email.value.trim(),
+            message: form.message.value.trim()
+          };
+          try {
+            const res = await fetch('/api/messages', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(data)
+            });
+            let bodyText = '';
+            try { bodyText = await res.text(); } catch(_) { bodyText = ''; }
+            // attempt to parse JSON if present
+            let json = null;
+            try { json = bodyText ? JSON.parse(bodyText) : null; } catch(_) { json = null; }
+            if (res.ok && json && json.ok) {
+              status.style.display = 'block';
+              status.style.color = 'var(--accent-1)';
+              status.textContent = 'Message sent — thank you!';
+              form.reset();
+              // If admin panel is open and you're signed in, refresh messages
+              try { if (window.adminLoadMessages) { window.adminLoadMessages(); } } catch(e){ console.warn('admin refresh failed', e); }
+            } else {
+              // show server-provided error message when possible
+              const errMsg = (json && json.error) ? json.error : (bodyText || 'Server error');
+              status.style.display = 'block';
+              status.style.color = '#ff6b6b';
+              status.textContent = errMsg || 'Could not send message — please try again later.';
+              console.error('POST /api/messages failed', res.status, bodyText);
+            }
+          } catch (err) {
+            status.style.display = 'block';
+            status.style.color = '#ff6b6b';
+            status.textContent = 'Could not send message — please try again later.';
+            console.error('POST /api/messages exception', err);
+          }
+        });
+      })();
+    </script>
+    <script>
+      // Embedded admin panel: login via /api/admin/login and fetch messages from /api/messages
+      (function(){
+        const openAdmin = document.getElementById('openAdmin');
+        const adminPanel = document.getElementById('adminPanel');
+        const adminLoginForm = document.getElementById('adminLoginForm');
+        const adminStatus = document.getElementById('adminStatus');
+        const adminMessages = document.getElementById('adminMessages');
+        const messagesList = document.getElementById('messagesList');
+        const adminLogoutBtn = document.getElementById('adminLogoutBtn');
+
+        if (!openAdmin || !adminPanel) return;
+
+        openAdmin.addEventListener('click', (e) => {
+          e.preventDefault();
+          adminPanel.style.display = adminPanel.style.display === 'block' ? 'none' : 'block';
+          if (adminPanel.style.display === 'block') adminPanel.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        adminLoginForm && adminLoginForm.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          adminStatus.style.display = 'none';
+          const data = { user: adminLoginForm.user.value.trim(), pass: adminLoginForm.pass.value };
+          try {
+            const res = await fetch('/api/admin/login', {
+              method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data)
+            });
+            if (res.ok) {
+              adminLoginForm.reset();
+              adminLoginForm.style.display = 'none';
+              adminMessages.style.display = 'block';
+              await loadMessages();
+            } else {
+              const json = await res.json().catch(()=>({}));
+              adminStatus.style.display = 'block';
+              adminStatus.style.color = '#ff7b7b';
+              adminStatus.textContent = (json && json.error) ? json.error : 'Invalid credentials';
+            }
+          } catch (err) {
+            adminStatus.style.display = 'block';
+            adminStatus.style.color = '#ff7b7b';
+            adminStatus.textContent = 'Login failed';
+            console.error(err);
+          }
+        });
+
+        async function loadMessages(){
+          messagesList.innerHTML = 'Loading...';
+          try{
+            const res = await fetch('/api/messages', { headers: { 'Accept': 'application/json' } });
+            if (!res.ok) { messagesList.innerHTML = '<p style="color:#ff6b6b">Unauthorized or error</p>'; return; }
+            const json = await res.json();
+            const msgs = (json && json.messages) || [];
+            if (!msgs.length) { messagesList.innerHTML = '<p>No messages yet.</p>'; return; }
+            messagesList.innerHTML = msgs.map(m => `<div class="msg"><h4>${escapeHtml(m.name)} <small>&lt;${escapeHtml(m.email)}&gt;</small></h4><time>${m.receivedAt}</time><p>${escapeHtml(m.message)}</p></div>`).join('');
+          } catch (err){ messagesList.innerHTML = '<p style="color:#ff6b6b">Unable to load messages</p>'; console.error(err); }
+        }
+
+        // make available to other scripts (contact form) so sending a message can trigger a refresh
+        window.adminLoadMessages = loadMessages;
+
+        adminLogoutBtn && adminLogoutBtn.addEventListener('click', async () => {
+          try{ await fetch('/api/admin/logout', { method: 'POST' }); adminMessages.style.display = 'none'; adminLoginForm.style.display = 'block'; messagesList.innerHTML = ''; }
+          catch(err){ console.error(err); }
+        });
+
+        function escapeHtml(s){ if (!s) return ''; return String(s).replace(/[&<>"']/g, function (c) { return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
+      })();
+    </script>
+  </body>
+</html>
